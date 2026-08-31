@@ -19,6 +19,10 @@ public class Die
             throw new ArgumentOutOfRangeException(nameof(numSides), $"{nameof (numSides)} must be greater than 0 and less than 21.");
         }
         NumberOfSides = numSides;
+
+
+        //Forces die to start as random number.
+        Roll();
     }
 
     /// <summary>
