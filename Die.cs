@@ -5,6 +5,9 @@
 /// </summary>
 public class Die
 {
+    private readonly static Random rand = new();
+
+
     /// <summary>
     /// contructs a new instance of die class with specified number of sides.
     /// </summary>
@@ -30,7 +33,6 @@ public class Die
 
     public byte Roll()
     {
-        Random rand = new Random();
         FaceUpValue = Convert.ToByte (rand.Next( 1, NumberOfSides + 1 ));
 
         return FaceUpValue;
