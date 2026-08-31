@@ -29,7 +29,7 @@ public class Die
     /// <summary>
     /// gets the number of sides of die
     /// </summary>
-    public byte NumberOfSides {  get; private set; }
+    public byte NumberOfSides {  get; init; }
 
     /// <summary>
     /// current face up value for the die
